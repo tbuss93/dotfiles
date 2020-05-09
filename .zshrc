@@ -3,9 +3,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git osx zsh-autosuggestions zsh-completions zsh-syntax-highlighting history-substring-search)
+plugins=(git osx zsh-autosuggestions zsh-completions zsh-syntax-highlighting history-substring-search autojump)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
@@ -23,5 +24,6 @@ export NVM_DIR="$HOME/.nvm"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias gs="git status"
+alias d="docker"
 alias wtf="echo 'I know, right!?'"
 

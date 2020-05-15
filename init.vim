@@ -1,5 +1,6 @@
 " Global Settings
 set number rnu
+let mapleader=" "
 
 " Install plugins with vim-plug
 call plug#begin(stdpath('data') . '/plugged')
@@ -17,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
 
 " Theme
@@ -32,3 +34,5 @@ let g:neosnipplet#enable_completed_snipplet = 1
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
+
+let g:ycm_alway_populate_location_list = 1

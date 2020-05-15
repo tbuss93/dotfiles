@@ -1,3 +1,4 @@
+export XDG_CONFIG_HOME=$HOME/.config
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -23,7 +24,12 @@ export NVM_DIR="$HOME/.nvm"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export PATH=$PATH:$PWD/.local/bin
+
 alias gs="git status"
+alias gd="git diff"
 alias d="docker"
+alias ms="mpc status"
 alias wtf="echo 'I know, right!?'"
 
+export LANG="en_US.UTF-8"

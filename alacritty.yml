@@ -30,18 +30,22 @@ window:
     lines: 30
   padding:
     x: 4
-    y: 0
+    y: 4
   decorations: buttonless
 font:
+  size: 14.0
   normal:
     family: JetBrainsMono Nerd Font
   bold:
     family: JetBrainsMono Nerd Font
+    style: Extra Bold
   italic:
     family: JetBrainsMono Nerd Font
+    style: Italic
   bold_italic:
     family: JetBrainsMono Nerd Font
-background_opacity: 1.0
+    style: Bold Italic
+background_opacity: .9
 cursor:
   style: Beam
 key_bindings:

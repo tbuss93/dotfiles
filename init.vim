@@ -1,5 +1,7 @@
 " Global Settings
 set number rnu
+set list
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 let mapleader=" "
 
 " Install plugins with vim-plug

@@ -22,6 +22,7 @@ brew "fzf"
 brew "httpie"
 brew "jesseduffield/lazydocker/lazydocker"
 brew "jq"
+brew "lazygit"
 brew "lf"
 brew "mpc"
 brew "mpd", restart_service: true

@@ -1,0 +1,3 @@
+browser "open %u"
+macro y set browser "mpv --fs %u" ; open-in-browser ; set browser "open %u"
+macro r set browser "readable -p text-content %u | less" ; open-in-browser ; set browser "open %u"

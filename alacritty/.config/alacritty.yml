@@ -48,6 +48,7 @@ font:
 background_opacity: .9
 cursor:
   style: Beam
+  vi_mode_style: Block
 key_bindings:
   - { key: 28,     mods: Alt, chars: "{" }
   - { key: 25,     mods: Alt, chars: "}" }

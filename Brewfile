@@ -12,6 +12,7 @@ tap "xo/xo"
 
 # CLI tools
 brew "autojump"
+brew "bandwhich"
 brew "bat"
 brew "calcurse"
 brew "cjbassi/gotop/gotop"

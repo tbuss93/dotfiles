@@ -11,6 +11,7 @@ tap "neovim/neovim"
 tap "xo/xo"
 
 # CLI tools
+brew "abook"
 brew "autojump"
 brew "bandwhich"
 brew "bat"

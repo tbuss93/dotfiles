@@ -28,6 +28,7 @@ brew "lazygit"
 brew "lf"
 brew "mpc"
 brew "mpd", restart_service: true
+brew "n"
 brew "ncmpcpp"
 brew "neofetch"
 brew "neovim"

@@ -8,19 +8,19 @@ autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
-alias vim="nvim"
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export N_PREFIX="$HOME/.n/"
 
-export PATH=$PATH:$PWD/.local/bin
+export PATH=$HOME/.local/bin:$PATH
 
+alias vim="nvim"
+alias ls="exa"
+alias cat="bat"
 alias gs="git status"
 alias gd="git diff"
 alias d="docker"
-alias ms="mpc status"
-alias wtf="echo 'I know, right!?'"
 
 eval "$(starship init zsh)"

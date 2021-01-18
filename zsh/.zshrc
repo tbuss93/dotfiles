@@ -16,11 +16,12 @@ export N_PREFIX="$HOME/.n/"
 
 export PATH=$HOME/.local/bin:$PATH
 
-alias vim="nvim"
-alias ls="exa"
 alias cat="bat"
-alias gs="git status"
-alias gd="git diff"
 alias d="docker"
+alias gd="git diff"
+alias gs="git status"
+alias ls="exa"
+alias rm="trash-put"
+alias vim="nvim"
 
 eval "$(starship init zsh)"

@@ -14,13 +14,13 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export N_PREFIX="$HOME/.n/"
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/.cargo/bin:$HOME/.linuxbrew/bin:$HOME/.local/bin:$PATH
 
 alias cat="bat"
 alias d="docker"
 alias gd="git diff"
 alias gs="git status"
-alias ls="exa"
+alias ls="exa -Fbhg --git --group-directories-first"
 alias rm="trash-put"
 alias vim="nvim"
 

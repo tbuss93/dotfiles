@@ -5,20 +5,12 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 let mapleader=" "
 let leader=" "
 
-" Moving lines up and down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
-
 " Install plugins with vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 " Eye-candy
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'mgee/lightline-bufferline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
 
@@ -39,10 +31,40 @@ Plug 'unblevable/quick-scope'
 
 call plug#end()
 
+" Moving lines up and down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
 " Theme
+set termguicolors
+let g:nord_italic = 1
+let g:nord_underline = 1
 colorscheme nord
-let g:airline_theme='nord'
-let g:airline_powerline_fonts=1
+
+" Lightline
+set noshowmode
+let g:lightline = {
+    \ 'colorscheme': 'nord',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste'  ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+    \   'right': [ [ 'lineinfo'  ],
+    \              [ 'percent'  ],
+    \              [ 'filetype'  ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'fugitive#head'
+    \ }
+    \ }
+
+" Integrate lightline-bufferline with lightline
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " CtrlP
 let g:ctrlp_prompt_mappings = {

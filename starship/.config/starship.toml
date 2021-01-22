@@ -1,5 +1,14 @@
 add_newline = false
 
+[character]
+success_symbol = "[❯](bold fg:#81a1c1)"
+
+[directory]
+style = "bold fg:#ebcb8b"
+truncation_symbol = ".../"
+
+[git_branch]
+style = "bold white"
+
 [docker_context]
 disabled = false
-context = test_context

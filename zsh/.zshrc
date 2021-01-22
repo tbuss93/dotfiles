@@ -22,6 +22,7 @@ alias gd="git diff"
 alias gs="git status"
 alias ls="exa -Fbhg --git --group-directories-first"
 alias rm="trash-put"
+alias wttr="http -p b get wttr.in/Dortmund | head -n 37 | tail -n 35"
 alias vim="nvim"
 
 eval "$(starship init zsh)"

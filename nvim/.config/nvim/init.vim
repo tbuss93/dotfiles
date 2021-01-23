@@ -25,6 +25,7 @@ Plug 'tpope/vim-surround'
 
 " Usablility
 Plug 'kien/ctrlp.vim'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-repeat'
 Plug 'unblevable/quick-scope'

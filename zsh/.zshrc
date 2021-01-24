@@ -15,6 +15,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export N_PREFIX="$HOME/.n/"
 
 export PATH=$HOME/go/bin:$HOME/.cargo/bin:$HOME/.linuxbrew/bin:$HOME/.local/bin:$PATH
+export BAT_THEME="Nord"
 
 alias cat="bat"
 alias d="docker"

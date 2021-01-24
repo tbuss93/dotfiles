@@ -25,5 +25,6 @@ alias ls="exa -Fbhg --git --group-directories-first"
 alias rm="trash-put"
 alias wttr="http -p b get wttr.in/Dortmund | head -n 37 | tail -n 35"
 alias vim="nvim"
+alias tmux='TERM=screen-256color tmux'
 
 eval "$(starship init zsh)"

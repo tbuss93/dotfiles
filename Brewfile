@@ -12,7 +12,6 @@ tap "xo/xo"
 
 # CLI tools
 brew "abook"
-brew "autojump"
 brew "bandwhich"
 brew "bat"
 brew "calcurse"

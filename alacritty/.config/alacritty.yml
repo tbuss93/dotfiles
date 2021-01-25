@@ -31,9 +31,9 @@ window:
   padding:
     x: 4
     y: 4
-  decorations: buttonless
+  decorations: full
 font:
-  size: 14.0
+  size: 18.0
   normal:
     family: JetBrainsMono Nerd Font
   bold:

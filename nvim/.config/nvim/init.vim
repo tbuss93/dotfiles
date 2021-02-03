@@ -50,6 +50,10 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+" Insert tabs
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 " Theme
 set termguicolors
 let g:nord_italic = 1

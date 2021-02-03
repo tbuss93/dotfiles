@@ -1,6 +1,8 @@
 " Global Settings
-set number rnu
-set ignorecase
+set relativenumber
+set smartcase
+set incsearch
+set scrolloff=10
 set list
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 let mapleader=" "

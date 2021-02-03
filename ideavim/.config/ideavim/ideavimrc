@@ -1,0 +1,53 @@
+" Common settings
+set showmode
+set scrolloff=10
+set incsearch
+set relativenumber
+set smartcase
+
+
+" Plugins (see https://github.com/JetBrains/ideavim/wiki/Emulated-plugins for complete list)
+set surround
+set multiple-cursors
+set commentary
+
+
+" Settings
+set ideajoin
+set ideamarks
+set ideastatusicon=gray
+set idearefactormode=keep
+set highlightedyank
+
+
+" Mappings
+let mapleader=" "
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+" Moving lines up and down
+nnoremap <C-j> :action MoveLineDown<CR>
+nnoremap <C-k> :action MoveLineUp<CR>
+inoremap <C-j> :action MoveLineDown<CR>
+inoremap <C-k> :action MoveLineUp<CR>
+vnoremap <C-j> :action MoveLineDown<CR>
+vnoremap <C-k> :action MoveLineUp<CR>
+
+noremap <leader>t <Action>(ActivateTerminalToolWindow)
+
+noremap <leader>r <Action>(Refactorings.QuickListPopupAction)
+noremap <leader>xm <Action>(ExtractMethod)
+noremap <leader>xv <Action>(IntroduceVariable)
+noremap <leader>xf <Action>(IntroduceField)
+
+noremap <leader>gb <Action>(Annotate)
+noremap <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
+
+noremap <leader>dr <Action>(ChooseRunConfiguration)
+noremap <leader>dc <Action>(Stop)
+noremap <leader>db <Action>(ToggleLineBreakpoint)
+
+noremap <leader>1 <Action>(SelectInProjectView)
+noremap <S-Space> <Action>(GotoNextError)
+
+noremap <leader>o <Action>(FileStructurePopup)

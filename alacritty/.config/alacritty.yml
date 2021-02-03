@@ -33,7 +33,7 @@ window:
     y: 4
   decorations: full
 font:
-  size: 18.0
+  size: 12.0
   normal:
     family: JetBrainsMono Nerd Font
   bold:

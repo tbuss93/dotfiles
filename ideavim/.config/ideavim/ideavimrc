@@ -33,21 +33,25 @@ inoremap <C-k> :action MoveLineUp<CR>
 vnoremap <C-j> :action MoveLineDown<CR>
 vnoremap <C-k> :action MoveLineUp<CR>
 
-noremap <leader>t <Action>(ActivateTerminalToolWindow)
+noremap <leader>t :action ActivateTerminalToolWindow<CR>
 
-noremap <leader>r <Action>(Refactorings.QuickListPopupAction)
-noremap <leader>xm <Action>(ExtractMethod)
-noremap <leader>xv <Action>(IntroduceVariable)
-noremap <leader>xf <Action>(IntroduceField)
+noremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+noremap <leader>xm :action ExtractMethod<CR>
+noremap <leader>xv :action IntroduceVariable<CR>
+noremap <leader>xf :action IntroduceField<CR>
 
-noremap <leader>gb <Action>(Annotate)
-noremap <leader>gh <Action>(Vcs.ShowTabbedFileHistory)
+noremap <leader>gc :action CheckinProject<CR>
+noremap <leader>gu :action Vcs.Push<CR>
+noremap <leader>gl :action Vcs.Pull<CR>
+noremap <leader>gd :action Compare.SameVersion<CR>
+noremap <leader>gb :action Annotate<CR>
+noremap <leader>gh :action Vcs.ShowTabbedFileHistory<CR>
 
-noremap <leader>dr <Action>(ChooseRunConfiguration)
-noremap <leader>dc <Action>(Stop)
-noremap <leader>db <Action>(ToggleLineBreakpoint)
+noremap <leader>dr :action ChooseRunConfiguration<CR>
+noremap <leader>dc :action Stop<CR>
+noremap <leader>db :action ToggleLineBreakpoint<CR>
 
-noremap <leader>1 <Action>(SelectInProjectView)
-noremap <S-Space> <Action>(GotoNextError)
+noremap <leader>1 :action SelectInProjectView<CR>
+noremap <S-Space> :action GotoNextError<CR>
 
-noremap <leader>o <Action>(FileStructurePopup)
+noremap <leader>o :action FileStructurePopup<CR>

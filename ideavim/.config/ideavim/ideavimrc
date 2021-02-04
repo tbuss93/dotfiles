@@ -25,6 +25,8 @@ let mapleader=" "
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+nnoremap <C-w>q :action CloseContent<CR>
+
 " Moving lines up and down
 nnoremap <C-j> :action MoveLineDown<CR>
 nnoremap <C-k> :action MoveLineUp<CR>

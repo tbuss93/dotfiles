@@ -1,5 +1,5 @@
 " Global Settings
-set relativenumber
+set relativenumber number
 set smartcase
 set incsearch
 set scrolloff=10

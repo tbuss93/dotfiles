@@ -2,7 +2,7 @@
 set showmode
 set scrolloff=10
 set incsearch
-set relativenumber
+set relativenumber number
 set smartcase
 
 
@@ -55,5 +55,7 @@ noremap <leader>db :action ToggleLineBreakpoint<CR>
 
 noremap <leader>1 :action SelectInProjectView<CR>
 noremap <S-Space> :action GotoNextError<CR>
+
+noremap <leader>mm :action ActivateMavenToolWindow<CR>
 
 noremap <leader>o :action FileStructurePopup<CR>

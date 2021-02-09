@@ -26,6 +26,8 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 nnoremap <C-w>q :action CloseContent<CR>
+nnoremap <leader><leader> :action ShowIntentionActions<CR>
+nnoremap gD :action QuickImplementations<CR>
 
 " Moving lines up and down
 nnoremap <C-j> :action MoveLineDown<CR>
@@ -42,20 +44,27 @@ noremap <leader>xm :action ExtractMethod<CR>
 noremap <leader>xv :action IntroduceVariable<CR>
 noremap <leader>xf :action IntroduceField<CR>
 
+noremap <leader>gg :action Vcs.QuickListPopupAction<cr>
 noremap <leader>gc :action CheckinProject<CR>
-noremap <leader>gu :action Vcs.Push<CR>
-noremap <leader>gl :action Vcs.Pull<CR>
+noremap <leader>gra :action ChangesView.Revert<CR>
+noremap <leader>grh :action Vcs.RollbackChangedLines<CR>
+noremap <leader>gp :action Vcs.UpdateProject<CR>
+noremap <leader>gP :action Vcs.Push<CR>
 noremap <leader>gd :action Compare.SameVersion<CR>
 noremap <leader>gb :action Annotate<CR>
-noremap <leader>gh :action Vcs.ShowTabbedFileHistory<CR>
+noremap <leader>gl :action Vcs.ShowTabbedFileHistory<CR>
+noremap [c :action VcsShowPrevChangeMarker<CR>
+noremap ]c :action VcsShowNextChangeMarker<CR>
 
-noremap <leader>dr :action ChooseRunConfiguration<CR>
+noremap <leader>dd :action ChooseRunConfiguration<CR>
 noremap <leader>dc :action Stop<CR>
 noremap <leader>db :action ToggleLineBreakpoint<CR>
 
-noremap <leader>1 :action SelectInProjectView<CR>
-noremap <S-Space> :action GotoNextError<CR>
+noremap <leader>1 :action SelectIn<CR>
+
+noremap ge :action GotoNextError<CR>
+noremap gE :action GotoPreviousError<CR>
 
 noremap <leader>mm :action ActivateMavenToolWindow<CR>
 
-noremap <leader>o :action FileStructurePopup<CR>
+noremap <leader>s :action FileStructurePopup<CR>

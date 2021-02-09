@@ -3,6 +3,7 @@ set relativenumber number
 set smartcase
 set incsearch
 set scrolloff=10
+set updatetime=100
 set list
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 let mapleader=" "

@@ -4,6 +4,7 @@ set scrolloff=10
 set incsearch
 set relativenumber number
 set smartcase
+set clipboard+=unnamed
 
 
 " Plugins (see https://github.com/JetBrains/ideavim/wiki/Emulated-plugins for complete list)

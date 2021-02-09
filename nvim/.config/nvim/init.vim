@@ -23,6 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mgee/lightline-bufferline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
+Plug 'APZelos/blamer.nvim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -60,6 +61,9 @@ set termguicolors
 let g:nord_italic = 1
 let g:nord_underline = 1
 colorscheme nord
+
+" Git Blamer
+let g:blamer_enabled = 1
 
 " Lightline
 set noshowmode

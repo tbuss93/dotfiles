@@ -11,6 +11,8 @@ set clipboard+=unnamed
 set surround
 set multiple-cursors
 set commentary
+set ReplaceWithRegister
+set argtextobj
 
 
 " Settings
@@ -41,9 +43,13 @@ vnoremap <C-k> :action MoveLineUp<CR>
 noremap <leader>t :action ActivateTerminalToolWindow<CR>
 
 noremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+
 noremap <leader>xm :action ExtractMethod<CR>
 noremap <leader>xv :action IntroduceVariable<CR>
 noremap <leader>xf :action IntroduceField<CR>
+
+noremap <leader>f :action ReformatCode<CR>
+noremap <leader>F :action ShowReformatFileDialog<CR>
 
 noremap <leader>gg :action Vcs.QuickListPopupAction<cr>
 noremap <leader>gc :action CheckinProject<CR>

@@ -40,7 +40,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'unblevable/quick-scope'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/argtextobj.vim'
 
 call plug#end()
 

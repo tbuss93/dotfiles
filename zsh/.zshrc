@@ -26,5 +26,6 @@ alias rm="trash-put"
 alias wttr="http -p b get wttr.in/Dortmund | head -n 37 | tail -n 35"
 alias vim="nvim"
 alias tmux='TERM=screen-256color tmux'
+alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove && sudo apt autoclean && brew update && brew upgrade && brew cleanup"
 
 eval "$(starship init zsh)"

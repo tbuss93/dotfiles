@@ -2,7 +2,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export LANG="en_US.UTF-8"
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting history-substring-search autojump)
+plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting history-substring-search autojump terraform)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh

@@ -53,6 +53,12 @@ vnoremap <C-k> :action MoveLineUp<CR>
 nnoremap <C-h> :action MoveElementLeft<CR>
 nnoremap <C-l> :action MoveElementRight<CR>
 
+" Extend and shrink selection
+nnoremap <C-[> :action EditorSelectWord<CR>
+nnoremap <C-]> :action EditorUnSelectWord<CR>
+vnoremap <C-[> :action EditorSelectWord<CR>
+vnoremap <C-]> :action EditorUnSelectWord<CR>
+
 noremap <leader>t :action ActivateTerminalToolWindow<CR>
 
 noremap <leader>r :action Refactorings.QuickListPopupAction<CR>

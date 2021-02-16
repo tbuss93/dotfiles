@@ -71,6 +71,7 @@ noremap <leader>1 :action SelectIn<CR>
 
 noremap ge :action GotoNextError<CR>
 noremap gE :action GotoPreviousError<CR>
+noremap <leader>j :action ShowErrorDescription<CR>
 
 noremap <leader>mm :action ActivateMavenToolWindow<CR>
 

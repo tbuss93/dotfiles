@@ -8,10 +8,19 @@ set clipboard+=unnamed
 
 
 " Plugins (see https://github.com/JetBrains/ideavim/wiki/Emulated-plugins for complete list)
+
+" Adds the surrounding text object (s)
 set surround
+
 set multiple-cursors
+
+" Adds gc keybinding to comment out the current line (gcc), the current selection (v{motions}gc) or motion (gc{motion})
 set commentary
+
+" Adds gr keybinding to replace motion (gr{motion}) or selection (v{motions}gr) with contents of register
 set ReplaceWithRegister
+
+" Adds a text object (ia or oa)for the argument of a method call
 set argtextobj
 
 
@@ -39,6 +48,10 @@ inoremap <C-j> :action MoveLineDown<CR>
 inoremap <C-k> :action MoveLineUp<CR>
 vnoremap <C-j> :action MoveLineDown<CR>
 vnoremap <C-k> :action MoveLineUp<CR>
+
+" Move element (like a function argument)
+nnoremap <C-h> :action MoveElementLeft<CR>
+nnoremap <C-l> :action MoveElementRight<CR>
 
 noremap <leader>t :action ActivateTerminalToolWindow<CR>
 

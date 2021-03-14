@@ -14,20 +14,18 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export N_PREFIX="$HOME/.n/"
 
-export PATH=$HOME/go/bin:$HOME/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH
-export BAT_THEME="Nord"
+test -r "$XDG_CONFIG_HOME/dir_colors" && test -x dircolors && eval $(dircolors $XDG_CONFIG_HOME/dir_colors)
 
-alias cat="bat"
+export PATH=$HOME/go/bin:$HOME/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH
+
+alias v="nvim"
 alias d="docker"
+alias mv="mv --no-clobber"
 alias gd="git diff"
 alias gs="git status"
-alias ls="exa -Fbhg --git --group-directories-first"
-alias rm="trash-put"
 alias wttr="http -p b get wttr.in/Dortmund | head -n 37 | tail -n 35"
-alias vim="nvim"
-alias mv="mv --no-clobber"
 alias sudo="sudo "
 alias tmux='TERM=screen-256color tmux'
-alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove && sudo apt autoclean && brew update && brew upgrade && brew cleanup"
+alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade && brew cleanup"
 
 eval "$(starship init zsh)"

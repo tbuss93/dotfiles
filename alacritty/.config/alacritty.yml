@@ -29,8 +29,8 @@ window:
     columns: 160
     lines: 40
   padding:
-    x: 4
-    y: 4
+    x: 1
+    y: 1
   decorations: full
 font:
   size: 12.0

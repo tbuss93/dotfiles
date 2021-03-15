@@ -9,6 +9,9 @@ set clipboard+=unnamed
 
 " Plugins (see https://github.com/JetBrains/ideavim/wiki/Emulated-plugins for complete list)
 
+" NERDTree binding for project view (k and j to go up and down, o to open/close folders, p to to go parent, / to search)
+set NERDTree
+
 " Adds the surrounding text object (s)
 set surround
 
@@ -59,8 +62,6 @@ nnoremap <C-]> :action EditorUnSelectWord<CR>
 vnoremap <C-[> :action EditorSelectWord<CR>
 vnoremap <C-]> :action EditorUnSelectWord<CR>
 
-noremap <leader>t :action ActivateTerminalToolWindow<CR>
-
 noremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 
 noremap <leader>xm :action ExtractMethod<CR>
@@ -91,7 +92,5 @@ noremap <leader>1 :action SelectIn<CR>
 noremap ge :action GotoNextError<CR>
 noremap gE :action GotoPreviousError<CR>
 noremap <leader>j :action ShowErrorDescription<CR>
-
-noremap <leader>mm :action ActivateMavenToolWindow<CR>
 
 noremap <leader>s :action FileStructurePopup<CR>

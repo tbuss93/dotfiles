@@ -9,14 +9,14 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
 
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 export N_PREFIX="$HOME/.n/"
 
-test -r "$XDG_CONFIG_HOME/dir_colors" && test -x dircolors && eval $(dircolors $XDG_CONFIG_HOME/dir_colors)
+test -h "$XDG_CONFIG_HOME/dir_colors" && test -x dircolors && eval $(dircolors $XDG_CONFIG_HOME/dir_colors)
 
 export PATH=$HOME/go/bin:$HOME/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 alias v="nvim"
 alias d="docker"

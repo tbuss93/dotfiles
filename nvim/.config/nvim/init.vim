@@ -2,6 +2,7 @@
 set relativenumber number
 set smartcase
 set undofile
+set mouse=a
 set incsearch
 set scrolloff=10
 set updatetime=100

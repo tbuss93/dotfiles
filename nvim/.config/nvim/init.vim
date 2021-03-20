@@ -1,6 +1,7 @@
 " Global Settings
 set relativenumber number
 set smartcase
+set undofile
 set incsearch
 set scrolloff=10
 set updatetime=100
@@ -39,6 +40,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'unblevable/quick-scope'
@@ -110,3 +112,5 @@ let g:fzf_colors =
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
+" Mundo
+nnoremap <leader>u :MundoToggle<CR>

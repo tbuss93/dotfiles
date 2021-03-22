@@ -13,7 +13,7 @@ export N_PREFIX="$HOME/.n/"
 
 test -h "$XDG_CONFIG_HOME/dir_colors" && test -x dircolors && eval $(dircolors $XDG_CONFIG_HOME/dir_colors)
 
-export PATH=$HOME/go/bin:$HOME/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.n/bin:$HOME/go/bin:$HOME/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -23,9 +23,10 @@ alias d="docker"
 alias mv="mv --no-clobber"
 alias gd="git diff"
 alias gs="git status"
-alias wttr="http -p b get wttr.in/Dortmund | head -n 37 | tail -n 35"
+alias wttr="curl wttr.in/Dortmund"
 alias sudo="sudo "
 alias tmux='TERM=screen-256color tmux'
 alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade && brew cleanup"
 
 eval "$(starship init zsh)"
+bindkey -v

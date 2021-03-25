@@ -7,6 +7,9 @@ set mouse=a
 set incsearch
 set scrolloff=10
 set updatetime=100
+set wildmode=longest,list,full
+syntax on
+set splitbelow splitright
 set list
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 let mapleader=" "
@@ -17,6 +20,9 @@ if exists('+termguicolors')
   let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Autocommands
+autocmd BufWritePre * %s/\s\+$//e
 
 " Install plugins with vim-plug
 call plug#begin(stdpath('data') . '/plugged')

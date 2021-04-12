@@ -28,7 +28,7 @@ alias gs="git status"
 alias wttr="curl wttr.in/Dortmund"
 alias sudo="sudo "
 alias tmux='TERM=screen-256color tmux'
-alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade && brew cleanup"
+alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade --greedy && brew cleanup"
 
 eval "$(starship init zsh)"
 bindkey -v

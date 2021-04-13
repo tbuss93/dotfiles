@@ -100,7 +100,7 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " fzf
-nmap <C-p> :GFiles<CR>
+nmap <C-p> :GFiles --exclude-standard --others --cached<CR>
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],

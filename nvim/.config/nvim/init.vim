@@ -49,7 +49,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'simnalamburt/vim-mundo'
+Plug 'simnalamburt/vim-mundo' " To install support, run: pip3 install --user pynvim
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'unblevable/quick-scope'

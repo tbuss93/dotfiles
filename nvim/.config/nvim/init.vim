@@ -37,6 +37,7 @@ Plug 'APZelos/blamer.nvim'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit'
 
 " Completions
 Plug 'jiangmiao/auto-pairs'

@@ -49,6 +49,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'preservim/nerdtree'
 Plug 'simnalamburt/vim-mundo' " To install support, run: pip3 install --user pynvim
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
@@ -123,3 +124,7 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 
 " Mundo
 nnoremap <leader>u :MundoToggle<CR>
+
+" NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>1 :NERDTreeFind<CR>

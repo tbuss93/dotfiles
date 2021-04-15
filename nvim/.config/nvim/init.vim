@@ -28,8 +28,7 @@ autocmd BufWritePre * %s/\s\+$//e
 call plug#begin(stdpath('data') . '/plugged')
 
 " Eye-candy
-Plug 'itchyny/lightline.vim'
-Plug 'mgee/lightline-bufferline'
+Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
 Plug 'APZelos/blamer.nvim'
@@ -79,27 +78,6 @@ colorscheme nord
 
 " Git Blamer
 let g:blamer_enabled = 1
-
-" Lightline
-set noshowmode
-let g:lightline = {
-    \ 'colorscheme': 'nord',
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste'  ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
-    \   'right': [ [ 'lineinfo'  ],
-    \              [ 'percent'  ],
-    \              [ 'filetype'  ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'fugitive#head'
-    \ }
-    \ }
-
-" Integrate lightline-bufferline with lightline
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " fzf
 nmap <C-p> :GFiles --exclude-standard --others --cached<CR>

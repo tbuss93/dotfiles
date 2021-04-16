@@ -88,7 +88,13 @@ colorscheme nord
 let g:blamer_enabled = 1
 
 " fzf
-nmap <C-p> :GFiles --exclude-standard --others --cached<CR>
+silent! !git rev-parse --is-inside-work-tree
+if v:shell_error == 0
+  noremap <C-p> :GFiles --cached --others --exclude-standard<CR>
+else
+  noremap <C-p> :Files<CR>
+endif
+
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],

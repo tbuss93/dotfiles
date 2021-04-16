@@ -10,6 +10,8 @@ tap "xo/xo"
 
 # CLI tools
 brew "bandwhich"
+brew "bat"
+brew "git-delta"
 brew "diskonaut"
 brew "fzf"
 brew "jq"

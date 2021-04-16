@@ -76,6 +76,7 @@ nnoremap <leader>u :MundoToggle<CR>
 " NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>1 :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
 
 " Theme
 set termguicolors

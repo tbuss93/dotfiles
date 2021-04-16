@@ -70,6 +70,13 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+" Mundo
+nnoremap <leader>u :MundoToggle<CR>
+
+" NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>1 :NERDTreeFind<CR>
+
 " Theme
 set termguicolors
 let g:nord_italic = 1
@@ -100,9 +107,3 @@ let g:fzf_colors =
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
-" Mundo
-nnoremap <leader>u :MundoToggle<CR>
-
-" NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap <leader>1 :NERDTreeFind<CR>

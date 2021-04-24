@@ -9,6 +9,8 @@ set scrolloff=10
 set updatetime=100
 set wildmode=longest,list,full
 syntax on
+set nocompatible
+filetype plugin on
 set splitbelow splitright
 set list
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
@@ -55,6 +57,7 @@ Plug 'tpope/vim-commentary'
 Plug 'unblevable/quick-scope'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'vim-scripts/argtextobj.vim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 

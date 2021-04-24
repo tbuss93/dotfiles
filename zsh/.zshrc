@@ -31,6 +31,7 @@ alias wttr="curl wttr.in/Dortmund"
 alias sudo="sudo "
 alias tmux='TERM=screen-256color tmux'
 alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade --greedy && brew cleanup"
+alias wiki="nvim -c ':VimwikiIndex'"
 
 eval "$(starship init zsh)"
 bindkey -v

@@ -12,3 +12,6 @@ style = "bold white"
 
 [docker_context]
 disabled = false
+
+[aws]
+disabled=true

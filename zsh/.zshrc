@@ -34,7 +34,7 @@ alias tmux='TERM=screen-256color tmux'
 alias Syu="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean && brew update && brew upgrade --greedy && brew cleanup"
 alias wiki="nvim -c ':VimwikiIndex'"
 
-which direnv && eval "$(direnv hook zsh)"
+which direnv >/dev/null && eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 bindkey -v
 
